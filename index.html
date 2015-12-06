@@ -2,6 +2,34 @@
 <html lang="en">
 
 	<head>
+    <style>
+        .floating{
+            float: left;
+            -webkit-animation-name: Floatingx;
+            -webkit-animation-duration: 3s;
+            -webkit-animation-iteration-count: infinite;
+            -webkit-animation-timing-function: ease-in-out;
+            -moz-animation-name: Floating;
+            -moz-animation-duration: 3s;
+            -moz-animation-iteration-count: infinite;
+            -moz-animation-timing-function: ease-in-out;
+            margin-left: 30px;
+            margin-top: 5px;
+
+        }
+
+        @-webkit-keyframes Floatingx{
+            from {-webkit-transform:translate(0, 0px);}
+            65% {-webkit-transform:translate(0, 15px);}
+            to {-webkit-transform: translate(0, -0px);    }    
+        }
+
+        @-moz-keyframes Floating{
+            from {-moz-transform:translate(0, 0px);}
+            65% {-moz-transform:translate(0, 15px);}
+            to {-moz-transform: translate(0, -0px);}    
+        }
+    </style>
 		<meta charset="utf-8">
 
 		<title>JavaScript in Space - Or, There and Back Again</title>
@@ -127,7 +155,7 @@
           <a href="http://makenai.net/nyanpollo-player/">http://makenai.net/nyanpollo-player/</a>
         </section>
         <section data-background="img/tumblr_mk0zx5i92N1s8g66lo1_500.gif"></section>
-        <section>
+        <section data-background="#7eC0ee">
           <h1>Thank you JSConf!</h1>
           <p>&lt;3, @dharden</p>
           <br />
@@ -136,11 +164,12 @@
 @dendro - @e$ - @jowyong - @bchatla
 @thaiwoodhere - @makenai - @debugish
 @aki - @jennschiffer - @bkirkby - @revealjs - @wikipedia
+floating effect by @djsbaker
           </pre>
-          <img class="balloon" src="img/balloon2.png" alt="v2" style="
+          <img class="balloon floating" src="img/balloon2.png" alt="v2" style="
               position: absolute;
               top: 0;
-              left: -100px;
+              left: -150px;
               border: 0;
               background: none;
               box-shadow: none;
@@ -184,6 +213,7 @@
      https://www.reddit.com/r/gifs/comments/2c81vt/cat_plays_with_balloon/
      http://its-leviooosa.tumblr.com/post/45929666050/me-when-a-teacher-ask-me-to-deliver-a-message
      https://commons.wikimedia.org/wiki/File:USAF_EOD_explosion.jpg
+     http://jsfiddle.net/djsbaker/rkzZG/
      -->
 
 	</body>
